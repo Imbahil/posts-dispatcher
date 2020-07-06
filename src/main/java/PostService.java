@@ -17,11 +17,6 @@ import java.util.List;
 public class PostService {
     private static FileWriter file;
 
-    public static void main(String[] args) throws IOException {
-
-        downloadPosts();
-    }
-
     public static void downloadPosts() throws IOException {
         HttpURLConnection connection = makeConnection();
         validateResponseStatus(connection.getResponseCode());
